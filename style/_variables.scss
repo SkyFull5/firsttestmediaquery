@@ -1,0 +1,21 @@
+$size-media-small: 320px;
+$size-media-medium: 768px;
+$size-media-large: 1170px;
+
+@mixin mediaSmall{
+  @media (min-width: $size-media-medium) {
+    @content
+  }
+}
+@mixin mediaMedium{
+  @media (min-width: $size-media-medium) {
+    @content
+  }
+}
+@mixin mediaLarge{
+  @media (min-width: $size-media-large) {
+    @content
+  }
+}
+
+
